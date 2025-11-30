@@ -1,0 +1,17 @@
+# Paths or metadata for source datasets
+
+desnz_ghg_emissions:
+  path: "data/raw/desnz_ghg_emissions.csv"
+  description: "DESNZ local authority greenhouse gas emissions"
+
+dft_fuel_consumption:
+  path: "data/raw/dft_fuel_consumption.xlsx"
+  description: "DfT fuel consumption by LAD"
+
+ons_population:
+  path: "data/raw/ons_population.xlsx"
+  description: "ONS population by LAD"
+
+imd_2019:
+  path: "data/raw/imd_2019.xlsx"
+  description: "IMD 2019 data for deprivation indices"

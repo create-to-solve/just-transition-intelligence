@@ -1,0 +1,11 @@
+# Global settings for JTIS
+
+project_name: "UK Just Transition Intelligence System"
+data_dir: "data"
+raw_dir: "data/raw"
+interim_dir: "data/interim"
+processed_dir: "data/processed"
+
+output_dir: "outputs"
+diagnostics_dir: "outputs/diagnostics"
+figs_dir: "outputs/figs"
