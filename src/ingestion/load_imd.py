@@ -47,7 +47,7 @@ def load_imd() -> pd.DataFrame:
     # Standardise column names
     df.columns = (
         df.columns.astype(str)
-        .strip()
+        .str.strip()
         .str.lower()
         .str.replace(" ", "_")
         .str.replace("-", "_")

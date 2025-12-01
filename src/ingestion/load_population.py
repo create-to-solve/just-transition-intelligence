@@ -26,7 +26,7 @@ logger = get_logger(__name__)
 
 
 def load_population(
-    path: str = "data/raw/ons_population_2011_2024.xlsx",
+    path: str = "data/raw/ons_population.xlsx",
     sheet_name: str = "MYEB3",
 ) -> pd.DataFrame:
     """
