@@ -3,3 +3,23 @@ data/interim/*
 data/processed/*
 data/*/*.csv
 data/*/*.xlsx
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter / pytest / misc
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Virtual environments (if any)
+.venv/
+env/
+venv/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Local config
+*.env
