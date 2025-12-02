@@ -26,15 +26,15 @@ Raw data → Ingestion → Harmonisation → Indicators → Composite (JTI) → 
 
 ## Repository Structure
 
-src/ingestion – raw dataset loaders
-src/harmonisation – LAD/year alignment, validation
-src/indicators – emissions, transport, deprivation indicators
-src/composite – JTI and weighting
-src/profiles – LAD profiles, cluster assignment
-src/dashboard – Streamlit app
-config/ – dataset and settings YAML
-outputs/ – pipeline results (jti_scores.csv, lad_profile_summary.csv)
-notebooks/ – exploration and validation
+1. src/ingestion – raw dataset loaders
+2. src/harmonisation – LAD/year alignment, validation
+3. src/indicators – emissions, transport, deprivation indicators
+4. src/composite – JTI and weighting
+5. src/profiles – LAD profiles, cluster assignment
+6. src/dashboard – Streamlit app
+7. config/ – dataset and settings YAML
+8. outputs/ – pipeline results (jti_scores.csv, lad_profile_summary.csv)
+9. notebooks/ – exploration and validation
 
 ## Usage
 
