@@ -1,17 +1,49 @@
-# Paths or metadata for source datasets
+datasets:
+  desnz_ghg_emissions:
+    path: data/raw/desnz_ghg_emissions.csv
+    description: DESNZ LA GHG emissions (tidy CSV)
+    loader: csv
+    schema: config/validation_schemas/desnz_ghg.yaml
 
-desnz_ghg_emissions:
-  path: "data/raw/desnz_ghg_emissions.csv"
-  description: "DESNZ local authority greenhouse gas emissions"
+  dft_fuel_consumption:
+    path: data/raw/dft_fuel_consumption.xlsx
+    description: DfT subnational road fuel consumption
+    loader: excel
+    sheets:
+      - "2005"
+      - "2006"
+      - "2007"
+      - "2008"
+      - "2009"
+      - "2010"
+      - "2011"
+      - "2012"
+      - "2013"
+      - "2014"
+      - "2015"
+      - "2016"
+      - "2017"
+      - "2018"
+      - "2019"
+      - "2020"
+      - "2021"
+      - "2022"
+      - "2023"
+    header_rows_to_skip: 3
+    schema: config/validation_schemas/dft_fuel.yaml
 
-dft_fuel_consumption:
-  path: "data/raw/dft_fuel_consumption.xlsx"
-  description: "DfT fuel consumption by LAD"
+  ons_population:
+    path: data/raw/ons_population.xlsx
+    description: ONS MYE population estimates by LA
+    loader: excel
+    sheet: "MYEB1"
+    header_rows_to_skip: 1
+    schema: config/validation_schemas/ons_population.yaml
 
-ons_population:
-  path: "data/raw/ons_population.xlsx"
-  description: "ONS population by LAD"
-
-imd_2019:
-  path: "data/raw/imd_2019.xlsx"
-  description: "IMD 2019 data for deprivation indices"
+  imd_2019:
+    path: data/raw/imd_2019.xlsx
+    description: IMD 2019 LSOA-level indices
+    loader: excel
+    sheet: "IMD2019"
+    header_rows_to_skip: 0
+    schema: config/validation_schemas/imd_2019.yaml
